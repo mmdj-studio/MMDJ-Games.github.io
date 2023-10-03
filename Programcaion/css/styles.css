@@ -1,0 +1,172 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: brown;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    width: 100vh;
+}
+
+.nav {
+    width: 100%;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav :nth-child(1) {
+    width: 33.3%;
+    background-color: white;
+    transition: 0.5s;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav :nth-child(2) {
+    width: 33.3%;
+    background-color: white;
+    transition: 0.5s;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav :nth-child(3) {
+    width: 33.3%;
+    background-color: white;
+    transition: 0.5s;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav :nth-child(1):hover {
+    background-color: black;
+    color: white;
+}
+
+.nav :nth-child(2):hover {
+    background-color: black;
+    color: white;
+}
+
+.nav :nth-child(3):hover {
+    background-color: black;
+    color: white;
+}
+
+.informacion {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.desarrollo {
+    background-color: white;
+    width: 33.3%;
+    text-align: center;
+    padding: 10px;
+}
+
+.objetivos {
+    background-color: white;
+    width: 33.3%;
+    text-align: center;
+    padding: 10px;
+}
+
+.caracteristicas {
+    background-color: white;
+    width: 33.3%;
+    text-align: center;
+    padding: 10px;
+}
+
+.integrantes {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: gray;
+    text-align: center;
+    padding: 20px;
+}
+
+.integrantes__op {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.image4 {
+    position: relative;
+}
+
+.image4 h4 {
+    position: absolute;
+    right: 40%;
+}
+
+.image5 {
+    position: relative;
+}
+
+.image5 h4 {
+    position: absolute;
+    right: 40%;
+}
+
+.image6 {
+    position: relative;
+}
+
+.image6 h4 {
+    position: absolute;
+    right: 40%;
+}
+
+.image7 {
+    position: relative;
+}
+
+.image7 h4 {
+    position: absolute;
+    right: 40%;
+}
+
+
+@media (min-width: 640px) {
+    .integrantes__op {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .nav {
+        flex-direction: row;
+    }
+}
